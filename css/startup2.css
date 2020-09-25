@@ -1,0 +1,536 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* ------------------------------- NAVBAR ------------------------------- */
+
+/*	ESTADO DEL MENÚ DE NAVEGACION	*/
+#nav-bar {
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+/*	LOGO	*/
+.navbar-brand img {
+	height: 40px;
+	padding-left: 30px;
+}
+
+/*	ITEMS DE LA LISTA DE ENLACES DEL MENÚ	*/
+.navbar-nav li {
+	padding: 0 10px;
+}
+
+/*	ENLACES DEL MENÚ	*/
+.navbar-nav li a {
+	text-align: center;
+}
+
+#nav-bar ul li a:hover {
+	color: #007bff !important;
+	background: #dadada;
+}
+
+/*	FONDO DEL MENÚ	*/
+.navbar {
+	background: #fff;
+}
+
+/*	BOTTONES DEL MENÚ	*/
+.navbar-toggler {
+	border: none !important;
+}
+
+/*	LINKS DEL MENÚ	*/
+.nav-link {
+	color: #555 !important;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+/* ------------------------------- SLIDER ------------------------------- */
+
+/*CONTENEDOR SLIDER*/
+#slider {
+	width: 100%;
+}
+
+.carousel-caption {
+	top: 50%;
+	transform: translateY(-50%);
+	/*-----------------¿Qué es?*/
+	bottom: initial !important;
+}
+
+.carousel-caption h5 {
+	color: #d5d5d5;
+	font-size: 42px;
+	font-weight: 700;
+}
+
+/* ------------------------------- NOSOTROS ------------------------------- */
+
+#nosotros {
+	padding: 20px 0;
+	color: #555;
+	text-align: center;
+}
+
+#nosotros .titulo {
+	margin-bottom: 10px;
+	color: #555 !important;
+	font-size: 45px;
+}
+
+#nosotros .nosotros-contenido {
+	padding-top: 10px;
+}
+
+/* ------------------------------- SERVICIOS ------------------------------- */
+
+#servicios {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/servicios.jpg);
+	background-size: cover;
+	background-position: center;
+	color: #efefef !important;
+	background-attachment: fixed;
+	padding: 50px 0;
+}
+
+#servicios h2 {
+	text-align: center;
+	color: #efefef !important;
+	padding-bottom: 10px;
+	font-size: 40px;
+}
+
+.servicios {
+	margin-top: 20px;
+}
+
+.servicios .icono {
+	font-size: 40px;
+	margin: 20px auto;
+	padding: 8px;
+	height: 80px;
+	width: 80px;
+	border: 1px solid #fff;
+	border-radius: 20%;
+}
+
+.servicios .icono .fa-desktop {
+	padding-top: 14px;
+	padding-left: 2px;
+}
+
+.servicios .col-md-4 {
+	border: 1px solid transparent;
+}
+
+.servicios .col-md-4:hover {
+	background: rgba(255, 255, 255, .2);
+	cursor: pointer;
+	transition: .3s;
+	border: 1px solid #fff;
+}
+
+/* ------------------------------- NUESTRO EQUIPO ------------------------------- */
+
+#team {
+	padding: 40px 0;
+	color: #555;
+}
+
+#team .titulo {
+	color: #555 !important;
+	padding-bottom: 10px;
+	font-size: 45px;
+}
+
+
+
+#team .profile-pic {
+	margin-top: 30px;
+}
+
+#team .profile-pic .img-box {
+	opacity: 1;
+	display: block;
+	position: relative;
+}
+
+#team .profile-pic .img-box img {
+	opacity: .8;
+	width: 250px;
+	transition: .3s;
+}
+
+#team .profile-pic .img-box img:hover {
+	opacity: 1;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	transition: .3s;
+}
+
+#team .profile-pic h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 15px;
+	color: #007bff !important;
+}
+
+#team .profile-pic h3 {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+#team .fa {
+	height: 25px;
+	width: 25px;
+	color: #fff !important;
+	padding: 5px;
+	border-radius: 50%;
+}
+
+#team .fa.fa-facebook {
+	background: #3b5998;
+}
+
+#team .fa.fa-twitter {
+	background: #1da1f2;
+}
+
+#team .fa.fa-linkedin {
+	background: #0077b5;
+}
+
+#team .img-box ul {
+	padding: 15px 0;
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: .3s;
+}
+
+
+#team .img-box:hover ul {
+	opacity: 1;
+	transition: .3s;
+}
+
+#team .img-box ul li {
+	padding: 5px;
+	display: inline-block;
+}
+
+/* ------------------------------- PROMO ------------------------------- */
+
+#promo {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url('../img/promo.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	background-attachment: fixed;
+	text-align: center;
+	padding: 100px;
+	font-size: 38px;
+	font-weight: 600;
+}
+
+/* ------------------------------- PLANES ------------------------------- */
+
+#planes {
+	padding: 40px 0;
+	background: #efefef;
+}
+
+#planes .titulo {
+	margin-bottom: 40px;
+	color: #555 !important;
+	font-size: 45px;
+}
+
+#planes .plan {
+	margin: 10px auto;
+	display: inline-block;
+	float: left;
+	width: 100%;
+	background: #fff;
+	transition: .3s;
+}
+
+#planes .plan:hover {
+	box-shadow: 0 0 10px 0 #333;
+}
+
+#planes .plan .p-head {
+	background: #2196f3;
+	display: inline-block;
+	float: left;
+	padding: 10px 5px 0 5px;
+	text-align: center;
+	width: 100%;
+}
+
+#planes .plan .nombre {
+	color: #fff;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 5px;
+	padding: 10px 5px;
+	text-transform: uppercase;
+}
+
+#planes .plan .precio {
+	font-size: 25px;
+	color: #ccc;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+#planes .plan .duracion span {
+	font-size: 15px;
+	color: #ccc;
+	font-weight: bold;
+}
+
+#planes .p-content {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	padding: 0 15px;
+	text-align: center;
+}
+
+#planes .p-content ul li {
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	padding: 15px 10px;
+	list-style: none;
+}
+
+#planes .p-content ul li:last-child {
+	border-bottom: none;
+	padding: 15px 10px 0 10px;
+}
+
+#planes .p-btn {
+	display: inline-block;
+	float: left;
+	padding: 5px 15px 25px 15px;
+	text-align: center;
+	width: 100%;
+}
+
+/*	----------------- CAMBIAR COLOR BOTONES -----------------	*/
+
+#planes .p-btn .b-btn {
+	border: 2px solid #2196f3;
+	border-radius: 20px;
+	display: inline-block;
+	font-size: 18px;
+	padding: 15px 10px;
+	transition: .3s;
+}
+
+#planes .p-btn .b-btn:hover {
+	background: #2196f3;
+	color: #fff !important;
+}
+
+#planes .p-btn a {
+	text-decoration: none !important;
+	color: #2196f3 !important;
+	font-weight: 600;
+}
+
+/* ------------------------------- RESEÑAS ------------------------------- */
+
+#reseñas {
+	padding: 40px 0;
+}
+
+#reseñas .titulo {
+	margin-bottom: 40px;
+	color: #555 !important;
+	font-size: 45px;
+}
+
+#reseñas .row {
+	margin-top: 30px;
+}
+
+/*	EDITAR COLUMNAS RESPONSIVE	*/
+#reseñas .columna {
+	margin: 40px auto;
+}
+
+#reseñas .usuario {
+	padding: 70px 10px 10px;
+	background: #efefef;
+}
+
+#reseñas .usuario:hover {
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .5);
+	cursor: pointer;
+	transition: .3s;
+}
+
+#reseñas .usuario .foto-usuario {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	top: -60px;
+	position: absolute;
+	left: calc(50% - 60px);
+	/*-----------------¿Qué es?*/
+	border: 10px solid #fff;
+}
+
+#reseñas .usuario .nombre-usuario {
+	font-size: 20px;
+	margin-top: 15px;
+	color: #007bff;
+	font-weight: 600;
+}
+
+#reseñas .usuario .texto-reseña {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#reseñas .usuario .texto-reseña::before {
+	content: '❝';
+	font-size: 30px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	right: 5px;
+}
+
+#reseñas .usuario .texto-reseña::after {
+	content: '❞';
+	font-size: 30px;
+	color: #007bff;
+	position: relative;
+	line-height: 20px;
+	left: 5px;
+}
+
+#reseñas .usuario span {
+	font-size: 12px;
+	color: #333;
+}
+
+/* ------------------------------- CONTACTO ------------------------------- */
+
+/*MENSAJERIA*/
+
+#contacto {
+	padding: 40px 0;
+	background: #efefef;
+}
+
+#contacto .titulo {
+	margin-bottom: 40px;
+	color: #555 !important;
+	font-size: 45px;
+}
+
+#contacto .formulario-contacto textarea {
+	resize: none;
+}
+
+::placeholder {
+	font-weight: 600;
+}
+
+#contacto .form-control,
+#contacto .enviar {
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+#contacto .enviar {
+	margin-bottom: 40px;
+}
+
+/*INFORMACIÓN DE CONTACTO*/
+
+#contacto .info-contacto .info {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 16px;
+}
+
+#contacto .info-contacto .icono {
+	padding-right: 10px;
+	padding-left: 4px;
+	font-size: 22px;
+	color: #007bff;
+}
+
+#contacto .info-contacto .icono-sm {
+	padding: 0px 5px;
+	color: #007bff;
+	font-size: 22px;
+}
+
+/* ------------------------------- FOOTER ------------------------------- */
+
+#footer {
+	background: #000;
+	color: #fff;
+	padding: 10px 0 1px 0;
+}
+
+#footer b {
+	padding-right: 10px;
+}
+
+#footer .fa {
+	padding: 8px 12px;
+	font-size: 24px;
+	position: relative;
+	top: 3px;
+	transition: .2s;
+}
+
+#footer .fa:hover {
+	background: #fff;
+	border-radius: 3px;
+	transition: .2s;
+}
+
+#footer .fa-linkedin {
+	color: #0077b5;
+}
+
+#footer .fa-linkedin:hover {
+	color: #fff;
+	background: #0077b5;
+}
+
+#footer .fa-github {
+	color: #6e5494;
+}
+
+#footer .fa-github:hover {
+	color: #fff;
+	background: #6e5494;
+}
+
+#footer .fa-youtube-play {
+	color: #ff0000;
+}
+
+#footer .fa-youtube-play:hover {
+	color: #fff;
+	background: #ff0000;
+}
